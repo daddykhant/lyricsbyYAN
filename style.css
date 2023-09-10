@@ -1,0 +1,232 @@
+:root {
+  --primary-color: #180f37;
+  --secondary-color: #c1b2f2;
+  --text-color: rgb(250, 250, 250);
+  --background-color: rgba(255, 255, 255, 0.295);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+}
+
+.frame {
+  background-color: #ffffff30;
+  backdrop-filter: blur(20px); /* Apply blur for the frosted glass effect */
+  width: 90vw;
+  height: 90vh;
+  margin: auto;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 2rem;
+  position: relative;
+  top: 2rem;
+  display: grid;
+  grid-template-columns: 5rem auto;
+}
+
+.navBar {
+  border-right: 2px solid rgba(255, 255, 255, 0.18);
+  justify-content: center;
+}
+
+.navBar li {
+  transform: rotate(-90deg);
+  margin: 4rem 0;
+  text-align: center;
+
+  width: 100%;
+}
+.navBar li a {
+  color: var(--text-color);
+  transition: ease-in-out 300ms;
+}
+.navBar li a:hover {
+  color: var(--secondary-color);
+}
+.navBar li a img {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.contentFrame {
+  overflow-y: auto;
+  padding: 0 3rem;
+}
+
+.menuSection {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 750px auto;
+  height: 90vh;
+}
+
+.contentInfoContainer {
+  color: var(--text-color);
+
+  margin-right: 5rem;
+}
+.contentInfoContainer h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary-color);
+}
+
+.contactUsBtn {
+  background-color: var(--secondary-color);
+  padding: 0.8rem 1rem;
+  border-radius: 15px;
+  display: inline-block;
+  margin-top: 3rem;
+  color: var(--primary-color);
+}
+
+.logocontainer img {
+  width: 70%;
+}
+
+.aboutSection {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+}
+
+.aboutimgframe {
+  width: 60vw;
+  height: 50vh;
+  overflow: hidden;
+  object-fit: cover;
+  margin-left: 5rem;
+  border-radius: 15px;
+}
+.aboutSection img {
+  width: 100%;
+  box-shadow: #180f37;
+}
+.aboutContentBox {
+  margin: 0 6rem;
+}
+.aboutContentBox h1 {
+  font-size: 3rem;
+  color: var(--primary-color);
+}
+.aboutContentBox p {
+  font-size: large;
+  color: var(--text-color);
+}
+
+.packages {
+  height: 90vh;
+  padding: 2rem 0;
+}
+.packages h1 {
+  text-align: center;
+  font-size: 3rem;
+
+  /* font-family: "Oswald", sans-serif; */
+  color: var(--text-color);
+}
+.packageCardContainer {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+}
+.packageCard {
+  width: 300px;
+  height: 380px;
+  background-color: var(--background-color);
+  border-radius: 15px;
+  padding: 1.8rem 1.5rem;
+  color: var(--text-color);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  transition: 300ms ease-in-out;
+}
+.packageCard:hover {
+  transform: scale(110%);
+  transform-origin: center;
+}
+.packageCard h3 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  margin-top: 1.2rem;
+  color: var(--primary-color);
+}
+
+.packageList li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.packages p {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.partners {
+  height: 90vh;
+}
+
+.partnerHeader {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.partnerHeader span {
+  color: var(--text-color);
+}
+.partners h1 {
+  font-size: 2.5rem;
+}
+.mostViewsContainer {
+  max-width: 80vw;
+  overflow: auto;
+  display: flex;
+}
+.mostViewsContainer h3 {
+  margin-bottom: 15px;
+}
+.partnerCard {
+  width: 250px;
+  height: 230px;
+  background-color: var(--background-color);
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 0 15px;
+}
+.artistFrame {
+  width: 250px;
+  height: 150px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.artistInfo {
+  padding: 10px;
+  line-height: 15px;
+}
+.artistInfo h3 {
+  margin-bottom: 10px;
+}
+.artist {
+  font-size: 0.8rem;
+}
+.option {
+  font-size: 0.8rem;
+  font-style: italic;
+}
